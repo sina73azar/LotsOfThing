@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/frame_layout_media_controller"
+    tools:context=".MediaControllerFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_overlay">
+
+
+        <ImageView
+            android:id="@+id/imgPlayPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_baseline_pause_24"
+            app:layout_constraintEnd_toStartOf="@+id/imgSkipNext"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgSkipPrevios"
+            app:layout_constraintTop_toTopOf="@+id/imgSkipPrevios"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/imgSkipNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/skip_next_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgPlayPause"
+            app:layout_constraintTop_toTopOf="@+id/imgPlayPause"
+            android:contentDescription="@string/icon_for_skip_next"/>
+
+        <ImageView
+            android:id="@+id/imgSkipPrevios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/skip_previous_24"
+            app:layout_constraintEnd_toStartOf="@+id/imgPlayPause"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/icon_for_skip_previos"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

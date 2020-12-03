@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LotsOfThing</string>
+    <string name="tvTextgetMusic">get music from device</string>
+    <string name="media_player">Media Player</string>
+    <string name="title_activity_media_player">MediaPlayer</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">Don t Worry Babe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="test_btn">test btn</string>
+    <string name="salam_bitch">salam bitch</string>
+    <string name="icon_for_skip_previos">icon for skip previos</string>
+    <string name="icon_for_skip_next">icon for skip next</string>
+</resources>
